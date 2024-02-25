@@ -1,0 +1,333 @@
+.dream {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .all-text {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            flex-direction: column;
+
+            @include breakpoint ('large') {
+                display: flex;
+                justify-content: flex-start;
+
+            }
+
+            h2 {
+                color: white;
+                font-size: 56px;
+                font-family: Cardo;
+                font-weight: 400;
+                line-height: 64.57px;
+                padding-bottom: 24px;
+            }
+
+            p {
+                color: white;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: Plus Jakarta Sans;
+                line-height: 24px;
+                padding-bottom: 24px;
+            }
+
+            button {
+                font-size: 14px;
+                font-family: Plus Jakarta Sans;
+                font-weight: 600;
+                color: white;
+                background: $primary;
+                border-radius: 2px;
+                padding: 18px 32px;
+                border: none;
+                margin-bottom: 50px;
+                width: 168px;
+                
+              
+            }
+
+            .group {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 400px;
+                color: #fff;
+                border-top: 1px solid #FFFFFF42;
+
+                @include breakpoint ('large') {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                }
+
+
+                .text {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 32.28px;
+                    margin-top: 50px;
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+
+
+            }
+        }
+
+        .img {
+            width: 778px;
+            height: 630px;
+            display: none;
+            left: 20%;
+
+            @include breakpoint ('large') {
+                display: block;
+
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+}
+
+.apartment {
+    background-color: #fff;
+    padding-top: 40px;
+
+    .container {
+        margin: 0 auto;
+
+        @include breakpoint ('large') {
+            display: flex;
+
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h2 {
+            color: #38343D;
+            font-size: 38px;
+            font-family: Cardo;
+            font-weight: 400;
+            padding: 40px;
+        }
+
+        p {
+            color: #818181;
+            font-size: 14px;
+            font-family: Plus Jakarta Sans;
+            font-weight: 400;
+            line-height: 24px;
+            padding: 20px 40px;
+        }
+    }
+}
+
+.properties {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+
+    .container {
+        margin: 0 auto;
+
+
+
+        h2 {
+            color: #38343D;
+            font-size: 38px;
+            font-family: Cordo;
+            font-weight: 400;
+            padding-bottom: 27px;
+        }
+
+        .cards {
+            display: block;
+
+            @include breakpoint ('large') {
+                display: flex;
+
+            }
+
+            .card {
+                width: 33.333%;
+                padding: 0 12px;
+
+                .inner {
+                    position: relative;
+                    width: 370px;
+                    background-color: #F6F6F6;
+                    border-radius: 12px;
+                    border: 1px rgba(0, 0, 0, 0.11) solid;
+                    line-height: 34px;
+                    padding: 0 12px;
+
+                    .img {
+                        width: 348px;
+                        height: 237px;
+                        padding-bottom: 12px;
+
+                        img {
+                            border-radius: 12px;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .hearticon,
+                    .heart-icon {
+                        position: absolute;
+                        top: 5%;
+                        right: 8%;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 12px;
+                        background: #FFFFFFBD;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        i {
+                            color: #E94562;
+
+                        }
+                    }
+
+                    .heart-icon {
+                        i {
+                            color: #201D2542;
+
+                        }
+                    }
+
+                    .content-rent,
+                    .content-sale {
+                        width: 77px;
+                        text-align: center;
+                        border-radius: 2px;
+                        gap: 10px;
+
+                        .for_rent,
+                        .for_sale {
+                            display: inline-block;
+                            font-size: 14px;
+                            font-family: Plus Jakarta Sans;
+                            font-weight: 400;
+                            line-height: 17.64px;
+                            color: $primary;
+                        }
+
+
+                    }
+
+                    .content-rent {
+                        background: #F9F2EE;
+
+                        .for_rent {
+                            color: $primary;
+                        }
+
+                    }
+
+                    .content-sale {
+                        background: #E7F3E8;
+
+                        .for_sale {
+                            color: #19C116;
+                        }
+                    }
+
+                    h3 {
+                        color: #38343D;
+                        font-size: 24px;
+                        font-family: Khmer MN;
+                        font-weight: 400;
+
+                    }
+
+                    .location {
+                        color: #818181;
+                        font-size: 14px;
+                        font-family: Plus Jakarta Sans;
+                        font-weight: 400;
+
+                        i {
+                            color: #123E56;
+                        }
+                    }
+
+                    .icons {
+                        display: flex;
+                        color: #38343D;
+                        font-size: 12px;
+                        font-family: Plus Jakarta Sans;
+                        font-weight: 500;
+
+                        div {
+                            padding-right: 48px;
+                        }
+
+                    }
+
+                    .all {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-bottom: 15px;
+
+                        .buy {
+                            color: $primary;
+                            font-size: 20px;
+                            font-family: Plus Jakarta Sans;
+                            font-weight: 600;
+
+                            span {
+                                color: #818181;
+                                font-size: 12px;
+                                font-family: Plus Jakarta Sans;
+                                font-weight: 400;
+                            }
+                        }
+
+                        button {
+                            color: $primary;
+                            font-size: 14px;
+                            font-family: Plus Jakarta Sans;
+                            font-weight: 600;
+                            border-radius: 2px;
+                            border: 1px #DE8556 solid;
+                            padding: 12px 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
